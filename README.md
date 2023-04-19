@@ -13,6 +13,6 @@ sitechecker.py
 # Instruções de uso
 
 ## 1. Criar o ambiente de trabalho
-![alt text](Print - 1.png)
+<img align="center" alt="Home" width="600" height="450" src="imagens\Print - 1.png">
 
 ```
