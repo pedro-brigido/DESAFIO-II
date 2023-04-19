@@ -13,6 +13,6 @@ sitechecker.py
 # Instruções de uso
 
 ## 1. Criar o ambiente de trabalho
-![alt text]("C:\Users\User\Desktop\Geral\Indicium\Ciclo básico\Módulo II - Fundamentos da programação\Desafio II\Print - 1.png")
+![alt text](Print - 1.png)
 
 ```
