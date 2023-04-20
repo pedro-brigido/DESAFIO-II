@@ -49,8 +49,9 @@ def testar_conexao():
 def adicionar_site():
     """ Botão para adicionar o site digitado à janela interativa que contém a lista de sites """
     site = entrada_site.get()
-    lista_sites.insert(tk.END, site)
-    entrada_site.delete(0, tk.END)
+    if site != "":
+        lista_sites.insert(tk.END, site)
+        entrada_site.delete(0, tk.END)
 
 def salvar_e_fechar():
     """ Caso tenha sites que não foram testados usando o botão testar conexão, irá testar as conexões para cada site que restou dentro da janela
@@ -96,7 +97,7 @@ nova_fonte.configure(size= 14, weight= "bold")
 label_topo.configure(font= nova_fonte)
 
 # Criando o botão para abrir arquivo de texto no computador
-botao_abrir = tk.Button(janela, text= "Abrir Arquivo de texto", command= abrir_arquivo)  
+botao_abrir = tk.Button(janela, text= "Abrir arquivo de texto", command= abrir_arquivo)  
 botao_abrir.pack(fill= tk.X, expand= True, padx= 5)
 
 # Cria um quadro dentro da janela, logo abaixo do botão definido anteriormente para agrupar os próximos 3 elementos na mesma linha
@@ -132,7 +133,7 @@ botao_apagar_texto = tk.Button(janela, text= "Apagar texto", command= apagar_tex
 botao_apagar_texto.pack(fill= tk.X, expand= True, padx= 5, pady= 5)
 
 """ Cria um botão abaixo do anterior que irá testar todos os sites que ainda não foram testados usando o botão de testar, mas ainda estão na caixa de texto,
-salvar todos os resultados que foram testados durante o uso da aplicação em um arquivo chamado final.txt e fechar a janela de interação"""
+salvar todos os resultados que foram testados durante o uso da aplicação em um arquivo chamado final.txt e fechar a janela de interação """
 botao_salvar_e_fechar = tk.Button(janela, text= "Testar tudo, salvar e Fechar", command= salvar_e_fechar)
 botao_salvar_e_fechar.pack(fill= tk.X, expand= True, padx= 5)
 

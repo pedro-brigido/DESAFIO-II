@@ -1,7 +1,7 @@
+O site: https://www.youtube.com/ está online
 O site: https://www.google.com/ está online
 O site: www.amazon.com está offline
 O site: https://www.udemy.com/ está online
-O site: https://www.youtube.com/ está online
 O site: www.globo.com está offline
 O site: www.aaaaaa.com está offline
 O site: www.netflix.com está offline
